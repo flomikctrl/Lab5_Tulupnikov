@@ -48,7 +48,22 @@ class Program
         {
             Console.WriteLine($"  Число {i + 1}: {lottery2.Draw()}");
         }
+
+        Console.WriteLine("\n=== Задание 5: Класс Сотрудник ===\n");
         
+        Employee intern = new Employee(3, 100); // стажер
+        Employee specialist = new Employee(7, 80); // специалист
+        Employee manager = new Employee(9, 60); // руководитель
+        
+        Console.WriteLine("Информация о сотрудниках:");
+        intern.ShowInfo();
+        specialist.ShowInfo();
+        manager.ShowInfo();
+        
+        Console.WriteLine("\nРабочий процесс:");
+        intern.Work();
+        specialist.Work();
+        manager.Work();
         
         
         Console.WriteLine("\nПрограмма завершена. Нажмите любую клавишу для выхода...");
